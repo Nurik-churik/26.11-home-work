@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [];
+
+while (true) {
+  let input = prompt("сан енгіз");
+
+  if (input == null) {
+   
+    break;
+  }
+
+  let number = parseInt(input, 10); 
+
+  if (isNaN(number)) {
+    alert("Сан енгізсей");
+    continue;
+  }
+
+  if (number % 2 !== 0) {
+   
+    console.log(arr);
+    break;
+  }
+
+  arr.push(number); 
+}
+
+console.log(arr);
+
+    </script>
+</body>
+</html>
